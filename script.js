@@ -113,4 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitBtn.disabled = !allFilled;
   }
   requiredFields.forEach((field) => field.addEventListener("input", checkForm));
+
+  // Current year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
 });
